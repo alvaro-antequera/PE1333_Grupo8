@@ -1,0 +1,49 @@
+% ============================================================
+% Preambulo
+% ============================================================
+
+% Tipo de documentos
+\documentclass[11pt,a4paper]{article}
+
+% Rutas principales
+\usepackage[strings]{underscore}
+\newcommand{\joinpath}[2]{#1/#2}
+\newcommand{\basepath}{D:/Github/PE1333_Grupo8/TP_01}
+
+\newcommand{\outputspath}{\joinpath{\basepath}{B_Outputs}}
+\newcommand{\latexpath}{\joinpath{\basepath}{D_LaTeX}}
+	
+% Cargar paquetes
+\input{\joinpath{\latexpath}{B_Packs/Packs.tex}}
+
+% ============================================================
+% Cuerpo
+% ============================================================
+\begin{document}
+	%-------------------------------------------------------------
+	% Portada
+	%-------------------------------------------------------------	
+	{\footnotesize Big Data --- Maestría en Economía, UdeSA\par}
+	\vspace{0.5em}
+	{\LARGE\bfseries Trabajo Práctico 01\par}
+	\vspace{0.15em}
+	{\large Álvaro, Vale, Joel\par}
+	\vspace{0.7em}
+	\hrule height 0.6pt
+	\vspace{0.5em}
+	%-------------------------------------------------------------
+	% Secciones
+	%-------------------------------------------------------------
+		\input{\joinpath{\latexpath}{C_Section/parte_01.tex}}
+%		\input{\joinpath{\latexpath}{C_Section/sec_02.tex}}
+%		\input{\joinpath{\latexpath}{C_Section/sec_03.tex}}
+%		\input{\joinpath{\latexpath}{C_Section/sec_04.tex}}
+	%-------------------------------------------------------------
+	% Bibliografia
+	%-------------------------------------------------------------
+	
+%	\nocite{*}
+%	
+%	\bibliographystyle{apalike}
+%	\bibliography{\joinpath{\bibpath}{tp_10.bib}}
+\end{document}

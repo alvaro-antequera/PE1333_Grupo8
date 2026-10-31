@@ -1,0 +1,61 @@
+% ============================================================
+% Texto e idioma
+% ============================================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage[margin=2.6cm]{geometry}
+\usepackage{amsmath, amssymb, mathtools}
+\usepackage[sfdefault,lining,scaled=.93]{FiraSans}
+\usepackage[scaled=.85]{FiraMono}
+\usepackage{newtxsf}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{threeparttable}
+
+% Caption
+\usepackage{caption}
+\captionsetup{labelfont=bf}
+\captionsetup[figure]{name=Figura}
+\captionsetup[table]{name=Tabla}
+
+% Colores
+\usepackage{xcolor}
+\newcommand{\codegray}[1]{\colorbox{gray!15}{\texttt{#1}}}
+
+\usepackage[authoryear,round]{natbib}
+% Hipervínculos
+\usepackage{hyperref}
+\hypersetup{
+		colorlinks   = true,
+		linkcolor    = black,   % Color for normal internal links
+		urlcolor     = blue,    % Color for URL links
+		citecolor    = blue,    % Color for citations
+		anchorcolor  = blue,    % Color for anchors
+		bookmarksopen=true,     % Expandir el índice cuando se abre el pdf
+		bookmarksnumbered=true, % Number bookmarks in PDF viewer
+		bookmarksdepth=3,
+		unicode=true 
+	}
+	% Hiperreferenciar figuras y ecuaciones
+	\newcommand{\figref}[1]{\hyperref[#1]{\textcolor{blue}{Figura \ref*{#1}}}}
+	\newcommand{\tabref}[1]{\hyperref[#1]{\textcolor{blue}{Tabla \ref*{#1}}}}
+	\newcommand{\eqnref}[1]{\hyperref[#1]{\textcolor{blue}{Ecuación \ref*{#1}}}}
+	\newcommand{\anxref}[1]{\hyperref[#1]{\textcolor{blue}{Anexo \ref*{#1}}}}
+	
+
+\urlstyle{same}
+
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.6em}{}
+\titlespacing*{\section}{0pt}{1.6em}{0.5em}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
