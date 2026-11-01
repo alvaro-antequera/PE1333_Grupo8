@@ -45,8 +45,6 @@ La selección de las variable se realizó en base a la un breve revisión de lit
 \texttt{MAS\_500} & Tamaño del aglomerado & \citet{cristina2019}, dimensión territorial \\
 \hline
 \end{tabular}
-\par\smallskip
-{\footnotesize\emph{Fuente.} Elaboración propia con el Diseño de Registro de la EPH \citep{indec2026diseno} y los antecedentes indicados.}
 \end{table}
 %Esta selección incorpora seis características demográficas, una educativa, seis laborales y dos territoriales. Para evitar duplicar información se utiliza el nivel educativo sin incluir simultáneamente años de escolaridad. Se conserva la intensidad laboral sin añadir las horas trabajadas como otro predictor. Del mismo modo, el ingreso se incorpora en escala logarítmica y no se repite en niveles. Las características de residencia previa y pluriempleo se consideran exploratorias, por lo que su inclusión no se presenta como una conclusión de los trabajos citados.
 \subsection{Limpieza y construcción de características}
@@ -55,10 +53,8 @@ Por un lado, el tratamiento de la no respuesta sigue los códigos de cada variab
 Por otro lado, se construyeron las 3 variables adicionales recomendadas en la consigna. Además, el ingreso declarado se transformó mediante $\log(1+\mathrm{P21})$ y se construyó un indicador de ingreso no declarado para distinguir los valores faltantes del ingreso cero. Las variables \texttt{CODUSU} y \texttt{NRO\_HOGAR} se utilizan exclusivamente para formar los hogares. Ningún identificador individual o familiar ingresa en la matriz de predictores.
 
 \subsection{Análisis de valores faltantes}
-
-El análisis detecta 3.719 casos sin ingreso declarado, equivalentes al 19,013\% de la muestra. También se identifican dos faltantes en lugar de nacimiento y uno en residencia anterior. En conjunto, 3.722 trabajadores presentan al menos una característica ausente antes de la codificación categórica.
-
-\begin{table}[htbp]
+En la \tabref{tab:variables_parte01} se presentan los valores faltantes por variable. De ese grupo, los missing values se concentra en el ingreso, pero se preservan las observaciones para no reducir la muestra.
+\begin{table}[H]
 \centering
 \caption{Valores faltantes en las características seleccionadas}
 \label{tab:faltantes_parte01}
@@ -71,16 +67,11 @@ Lugar de nacimiento & 2 & 0,010\% \\
 Residencia anterior & 1 & 0,005\% \\
 \hline
 \end{tabular}
-\par\smallskip
-{\footnotesize\emph{Fuente.} Elaboración propia con EPH 2026, primer trimestre.}
 \end{table}
-
-Dado que el problema de no respuesta se concentra en el ingreso, se preservan las observaciones para no reducir innecesariamente la muestra. Las categorías no observadas se identifican explícitamente cuando corresponde. Los faltantes numéricos se imputan con la mediana calculada exclusivamente en entrenamiento. Posteriormente, esa misma mediana se aplica al conjunto de prueba. Este procedimiento evita utilizar información de prueba durante la preparación del modelo.
+Los missing values numéricos se imputan con la mediana calculada exclusivamente en entrenamiento. Posteriormente, esa misma mediana se aplica al conjunto de prueba. Este procedimiento evita utilizar información de prueba durante la preparación del modelo.
 
 \subsection{Comparación descriptiva entre formales e informales}
-
-Se comparan las medias de ambos grupos mediante la prueba $t$ de Welch. La diferencia se calcula como la media de los trabajadores informales menos la de los formales. La Tabla~\ref{tab:medias_parte01} presenta los resultados de las características seleccionadas. Los contrastes son descriptivos y no se interpretan como efectos causales. Asimismo, las pruebas no incorporan el diseño muestral complejo ni los ponderadores de la EPH, de modo que sus valores $p$ tienen un alcance exploratorio.
-
+Mediante la prueba $t$ de Welch, se comparan las medias de los trabajadores informales con la de los formales y algunos resultados se presentan en la \tabref{tab:medias_parte01}.
 \begin{table}[htbp]
 \centering
 \caption{Diferencias de medias por condición laboral}
@@ -101,14 +92,10 @@ Asalariado & 0,808 & 0,596 & $-0,212$ & $<0{,}001$ \\
 Nivel educativo 6 & 0,364 & 0,090 & $-0,274$ & $<0{,}001$ \\
 \hline
 \end{tabular}
-\par\smallskip
-{\footnotesize\emph{Notas.} Las medias de indicadores binarios representan proporciones. El ingreso se resume entre quienes lo declararon. Los valores proceden del notebook ejecutado y están redondeados.\quad \emph{Fuente.} Elaboración propia con EPH 2026, primer trimestre.}
 \end{table}
-
 Los trabajadores informales tienen una edad media inferior en 4,08 años. También residen en hogares más numerosos y registran menores ingresos laborales declarados. Por el contrario, la diferencia entre las proporciones de mujeres no resulta estadísticamente significativa al 5\% en este contraste sin ponderación. Estas asociaciones son compatibles con el interés de la literatura en las características individuales y de los puestos de trabajo \citep{formichella2008,ludmer2020}. Sin embargo, no establecen relaciones causales.
 
 \subsection{Codificación y división de la muestra}
-
 Las características categóricas se representan mediante variables indicadoras. Se omite una categoría de referencia por característica y se incorpora un intercepto. Luego se divide aleatoriamente la muestra en un 70\% para entrenamiento y un 30\% para prueba, con \texttt{random\_state=444}. Así se obtienen 13.692 observaciones de entrenamiento y 5.868 de prueba. La proporción de informalidad alcanza el 45,60\% en entrenamiento y el 43,52\% en prueba. La partición no fue estratificada.
 
 La expansión categórica genera 65 columnas antes de añadir el intercepto. Se detecta una dependencia lineal exacta y se retira una columna redundante correspondiente a una categoría sin dato de residencia anterior. La matriz final conserva 65 columnas, incluido el intercepto, y presenta rango completo en entrenamiento. La decisión responde a la estructura algebraica observada en la muestra y no a pruebas de significancia individual.
