@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.10.10)  31 OCT 2026 17:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.10.10)  31 OCT 2026 23:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -927,7 +927,7 @@ t line 30.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/regular/n' will be
 (Font)              scaled to size 11.15991pt on input line 30.
 
-(D:/Github/PE1333_Grupo8/TP_01/D_LaTeX/C_Section/parte_01.tex
+(D:/Github/PE1333_Grupo8/TP_01/D_LaTeX/C_Section/parte_01_v2.tex
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/b/n' in size <12> not available
 (Font)              Font shape `T1/FiraSans-LF/bold/n' tried instead on input l
 ine 1.
@@ -1076,11 +1076,11 @@ Package rerunfilecheck Info: File `Master.out' has not changed.
 (rerunfilecheck)             Checksum: 8E652569F027EC32380F7649F3B89D7C;1928.
  ) 
 Here is how much of TeX's memory you used:
- 21143 strings out of 467392
- 353811 string characters out of 5406124
+ 21152 strings out of 467392
+ 354066 string characters out of 5406124
  816515 words of memory out of 5000000
  49977 multiletter control sequences out of 15000+600000
- 829746 words of font info for 225 fonts, out of 8000000 for 9000
+ 830739 words of font info for 231 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,11n,120p,1005b,535s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/JOEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraMono
@@ -1093,9 +1093,9 @@ ams/MiKTeX/fonts/type1/public/newtx/txexs.pfb><C:/Users/JOEL/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/JOEL/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/newtxsf/zsfmi-reg.pfb><C:/Users/JOEL/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/newtxsf/zsfmia-reg.pfb>
-Output written on Master.pdf (3 pages, 244421 bytes).
+Output written on Master.pdf (3 pages, 244657 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
+ 157 PDF objects out of 1000 (max. 8388607)
  24 named destinations out of 1000 (max. 500000)
  48185 words of extra memory for PDF output out of 51595 (max. 10000000)
 
