@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.8.18)  4 NOV 2026 01:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.8.18)  4 NOV 2026 13:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1047,23 +1047,32 @@ LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/regular/n' will be
 r/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fira/fir_tz2nek.enc}{C:/Users/a
 lvar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fira/fir_d4q673.enc}{C:/User
 s/alvar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fira/fir_ugbesn.enc}]
-<../../B_Outputs/B_Figure/heatmap_faltantes.png, id=90, 859.65166pt x 352.31625
-pt>
+<../../B_Outputs/B_Figure/heatmap_faltantes.png, id=102, 859.65166pt x 352.3162
+5pt>
 File: ../../B_Outputs/B_Figure/heatmap_faltantes.png Graphic file (type png)
 <use ../../B_Outputs/B_Figure/heatmap_faltantes.png>
 Package pdftex.def Info: ../../B_Outputs/B_Figure/heatmap_faltantes.png  used o
 n input line 76.
 (pdftex.def)             Requested size: 418.08119pt x 171.34625pt.
 
-[2 <../../B_Outputs/B_Figure/heatmap_faltantes.png>]) (Master.bbl
+[2 <../../B_Outputs/B_Figure/heatmap_faltantes.png>])
+(../C_Section/parte_03.tex (../../B_Outputs/B_Table/tabla_knn_k_fijos.tex)
+[3] (../../B_Outputs/B_Table/tabla_knn_cv.tex)
+<../../B_Outputs/B_Figure/knn_accuracy_cv.png, id=122, 643.203pt x 353.03896pt>
+
+File: ../../B_Outputs/B_Figure/knn_accuracy_cv.png Graphic file (type png)
+<use ../../B_Outputs/B_Figure/knn_accuracy_cv.png>
+Package pdftex.def Info: ../../B_Outputs/B_Figure/knn_accuracy_cv.png  used on 
+input line 19.
+(pdftex.def)             Requested size: 427.07419pt x 234.41241pt.
+ [4]) (Master.bbl
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/m/it' in size <10.95> not availa
 ble
 (Font)              Font shape `T1/FiraSans-LF/regular/it' tried instead on inp
 ut line 7.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/regular/it' will be
 (Font)              scaled to size 10.18341pt on input line 7.
- [3]) [4]
-(Master.aux
+) [5 <../../B_Outputs/B_Figure/knn_accuracy_cv.png>] (Master.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
@@ -1072,16 +1081,16 @@ LaTeX2e <2026-06-01>
 L3 programming layer <2026-07-20>
  ***********
 Package rerunfilecheck Info: File `Master.out' has not changed.
-(rerunfilecheck)             Checksum: 8E652569F027EC32380F7649F3B89D7C;1928.
+(rerunfilecheck)             Checksum: F44F561F5462B4809566E13928291F49;2794.
  ) 
 Here is how much of TeX's memory you used:
- 20995 strings out of 467501
- 349241 string characters out of 5408550
- 814209 words of memory out of 5000000
- 49705 multiletter control sequences out of 15000+600000
+ 21036 strings out of 467501
+ 350909 string characters out of 5408550
+ 814502 words of memory out of 5000000
+ 49728 multiletter control sequences out of 15000+600000
  830302 words of font info for 233 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,11n,120p,1005b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,11n,120p,1005b,535s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraMon
 o-Regular.pfb><C:/Users/alvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 fira/FiraSans-Bold.pfb><C:/Users/alvar/AppData/Local/Programs/MiKTeX/fonts/type
@@ -1092,9 +1101,9 @@ grams/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/alvar/AppData/Local
 al/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/alvar/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/newtxsf/zsfmi-reg.pfb><C:/Users/alvar/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/newtxsf/zsfmia-reg.pfb>
-Output written on Master.pdf (4 pages, 305765 bytes).
+Output written on Master.pdf (5 pages, 376679 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
- 48190 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 189 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
+ 48219 words of extra memory for PDF output out of 51595 (max. 10000000)
 
