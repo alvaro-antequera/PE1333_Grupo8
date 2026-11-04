@@ -47,12 +47,12 @@ La selección de las variables se realizó a partir de una breve revisión de li
 \end{tabular}
 \end{table}
 \subsection{Limpieza y construcción de características}
-Por un lado, el tratamiento de la no respuesta sigue los códigos de cada variable establecidos en el Diseño de Registro. Por lo general, el valor 9 se interpreta como no respuesta únicamente cuando corresponde y se aplicó para \texttt{CH15}, \texttt{CH16}, \texttt{NIVEL\_ED} e \texttt{INTENSI}. El valor 99 de \texttt{PP04C} identifica tamaño no declarado y el valor $-9$ de \texttt{P21} identifica ingreso no declarado. Asimismo, el código 0 de \texttt{II7} se trata como no aplicable y se imputa con la moda de entrenamiento antes de codificar la tenencia de vivienda.
+Por un lado, el tratamiento de la no respuesta sigue los códigos de cada variable establecidos en el Diseño de Registro. Por lo general, el valor 9 se interpreta como no respuesta únicamente cuando corresponde y se aplicó para \texttt{CH15}, \texttt{CH16}, \texttt{NIVEL\_ED} e \texttt{INTENSI}. El valor 99 de \texttt{CH06} se considera edad no declarada, mientras que el 99 de \texttt{PP04C} identifica tamaño no declarado y el valor $-9$ de \texttt{P21} identifica ingreso no declarado. Asimismo, el código 0 de \texttt{II7} se trata como no aplicable y se imputa con la moda de entrenamiento antes de codificar la tenencia de vivienda.
 
 Por otro lado, se construyeron las tres variables adicionales recomendadas en la consigna, correspondientes a la edad al cuadrado, el tamaño del hogar y la proporción de integrantes ocupados. Además, el ingreso declarado se transformó mediante $\log(1+\mathrm{P21})$ y se construyó un indicador de ingreso no declarado para distinguir los valores faltantes del ingreso cero. Las variables \texttt{CODUSU} y \texttt{NRO\_HOGAR} se utilizan exclusivamente para formar los hogares. Ningún identificador individual o familiar ingresa en la matriz de predictores.
 
 \subsection{Análisis de valores faltantes}
-En la \tabref{tab:faltantes_parte01} se presentan los valores faltantes por variable. De ese grupo, los valores faltantes se concentran en el ingreso, pero se preservan las observaciones para no reducir la muestra.
+En la \tabref{tab:faltantes_parte01} se presentan los valores faltantes por variable. De ese grupo, los valores faltantes se concentran en el ingreso y el tamaño del establecimiento, pero se preservan las observaciones para no reducir la muestra.
 \begin{table}[H]
 \centering
 \caption{Valores faltantes en las características seleccionadas}
@@ -62,17 +62,26 @@ En la \tabref{tab:faltantes_parte01} se presentan los valores faltantes por vari
 \textbf{Característica} & \textbf{Observaciones} & \textbf{Porcentaje} \\
 \hline
 Ingreso laboral transformado & 3.719 & 19,013\% \\
+Tamaño del establecimiento & 2.607 & 13,328\% \\
 Tenencia de vivienda & 5 & 0,026\% \\
 Lugar de nacimiento & 2 & 0,010\% \\
 Residencia anterior & 1 & 0,005\% \\
+Edad & 1 & 0,005\% \\
 \hline
 \end{tabular}
 \end{table}
-Los valores faltantes numéricos se imputan con la mediana calculada exclusivamente en entrenamiento. Posteriormente, esa misma mediana se aplica al conjunto de prueba. Este procedimiento evita utilizar información de prueba durante la preparación del modelo.
+La \figref{fig:faltantes_parte01} presenta el patrón de valores faltantes antes de la imputación.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.93\textwidth]{\joinpath{\outputspath}{B_Figure/heatmap_faltantes.png}}
+\caption{Valores faltantes en la matriz de predictores antes de imputar}
+\label{fig:faltantes_parte01}
+\end{figure}
+Los valores faltantes de edad e ingreso se imputan con la mediana calculada exclusivamente en entrenamiento. Para las variables categóricas, \texttt{CH15} y \texttt{PP04C} conservan una categoría \texttt{sin\_dato}, mientras que \texttt{CH16} e \texttt{II7} se imputan con la moda de entrenamiento. Posteriormente, los mismos criterios se aplican al conjunto de prueba. Este procedimiento evita utilizar información de prueba durante la preparación del modelo.
 
 \subsection{Comparación descriptiva entre formales e informales}
-Mediante la prueba $t$ de Welch, se comparan las medias de los trabajadores informales con las de los formales y algunos resultados se presentan en la \tabref{tab:medias_parte01}.
-\begin{table}[htbp]
+Mediante la prueba $t$ de Welch, se comparan las medias de los trabajadores informales con las de los formales y algunos resultados se presentan en la \tabref{tab:medias_parte01}. Las medias corresponden a los predictores preparados para el modelado, después de imputar los valores faltantes.
+\begin{table}[H]
 \centering
 \caption{Diferencias de medias por condición laboral}
 \label{tab:medias_parte01}
@@ -81,11 +90,11 @@ Mediante la prueba $t$ de Welch, se comparan las medias de los trabajadores info
 \hline
 \textbf{Característica} & \textbf{Formal} & \textbf{Informal} & \textbf{Diferencia} & \textbf{Valor $p$} \\
 \hline
-Edad & 43,483 & 39,400 & $-4,083$ & $<0{,}001$ \\
-Edad al cuadrado & 2.034,084 & 1.754,370 & $-279,714$ & $<0{,}001$ \\
+Edad & 43,483 & 39,393 & $-4,090$ & $<0{,}001$ \\
+Edad al cuadrado & 2.034,084 & 1.753,447 & $-280,637$ & $<0{,}001$ \\
 Integrantes del hogar & 3,300 & 3,878 & 0,579 & $<0{,}001$ \\
 Proporción de ocupados & 0,648 & 0,627 & $-0,021$ & $<0{,}001$ \\
-Logaritmo del ingreso & 13,787 & 12,380 & $-1,407$ & $<0{,}001$ \\
+Logaritmo del ingreso & 13,748 & 12,599 & $-1,150$ & $<0{,}001$ \\
 Ingreso no declarado & 0,198 & 0,180 & $-0,018$ & 0,002 \\
 Mujer & 0,448 & 0,461 & 0,013 & 0,065 \\
 Menores de 10 años en el hogar & 0,352 & 0,454 & 0,102 & $<0{,}001$ \\
@@ -95,11 +104,11 @@ Nivel educativo 6 & 0,364 & 0,090 & $-0,274$ & $<0{,}001$ \\
 \hline
 \end{tabular}
 \end{table}
-Los trabajadores informales tienen una edad media inferior en 4,08 años. También residen en hogares más numerosos y registran menores ingresos laborales declarados. Por el contrario, la diferencia entre las proporciones de mujeres no resulta estadísticamente significativa al 5\% en este contraste sin ponderación. Estas asociaciones son compatibles con el interés de la literatura en las características individuales y de los puestos de trabajo \citep{formichella2008,ludmer2020}. Sin embargo, no establecen relaciones causales.
+Los trabajadores informales tienen una edad media inferior en 4,09 años. También residen en hogares más numerosos y registran menores ingresos laborales después de la imputación. Por el contrario, la diferencia entre las proporciones de mujeres no resulta estadísticamente significativa al 5\% en este contraste sin ponderación. Estas asociaciones son compatibles con el interés de la literatura en las características individuales y de los puestos de trabajo \citep{formichella2008,ludmer2020}. Sin embargo, no establecen relaciones causales.
 
 \subsection{Codificación y división de la muestra}
-Las características categóricas se representan mediante variables indicadoras. Se omite una categoría de referencia por característica y se incorpora un intercepto. Luego se divide aleatoriamente la muestra en un 70\% para entrenamiento y un 30\% para prueba, con \texttt{random\_state=444}. Así se obtienen 13.692 observaciones de entrenamiento y 5.868 de prueba. La proporción de informalidad alcanza el 45,60\% en entrenamiento y el 43,52\% en prueba. La partición no fue estratificada.
+La muestra se divide aleatoriamente en un 70\% para entrenamiento y un 30\% para prueba, con \texttt{random\_state=444}. Las características categóricas se representan luego mediante variables indicadoras, ajustando el codificador en entrenamiento y aplicándolo a prueba. Se omite una categoría de referencia por característica y se incorpora un intercepto. Así se obtienen 13.692 observaciones de entrenamiento y 5.868 de prueba. La proporción de informalidad alcanza el 45,60\% en entrenamiento y el 43,52\% en prueba. La partición no fue estratificada.
 
-La expansión categórica genera 69 columnas indicadoras y numéricas antes de añadir el intercepto. Se detecta una dependencia lineal exacta y se retira una columna redundante correspondiente a una categoría sin dato de residencia anterior. La matriz final conserva 69 columnas, incluido el intercepto, y presenta rango completo en entrenamiento. La decisión responde a la estructura algebraica observada en la muestra y no a pruebas de significancia individual.
+La expansión categórica genera 68 columnas indicadoras y numéricas antes de añadir el intercepto. La matriz final conserva 69 columnas, incluido el intercepto, y presenta rango completo en entrenamiento. La única observación con \texttt{CH16} faltante pertenece al conjunto de prueba y se imputa con la moda de entrenamiento.
 
 Finalmente, la base preparada conserva las 19.560 observaciones con la identificación de su pertenencia a entrenamiento o prueba. Esta información permite utilizar la misma partición para comparar posteriormente regresión logística, análisis discriminante lineal y vecinos más cercanos.

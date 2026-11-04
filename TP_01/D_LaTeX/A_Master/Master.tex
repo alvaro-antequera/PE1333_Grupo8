@@ -5,14 +5,31 @@
 % Tipo de documentos
 \documentclass[11pt,a4paper]{article}
 
-% Rutas principales
+% Rutas relativas: no dependen del usuario ni de la ubicación del repositorio.
+% Detectar el directorio desde el que TeXstudio o el compilador ejecutan Master.tex.
 \usepackage[strings]{underscore}
 \newcommand{\joinpath}[2]{#1/#2}
-\newcommand{\basepath}{D:/Github/PE1333_Grupo8/TP_01}
-
+\IfFileExists{../B_Packs/Packs.tex}{%
+	% Compilación desde D_LaTeX/A_Master (TeXstudio).
+	\newcommand{\basepath}{../..}
+	\newcommand{\latexpath}{..}
+}{%
+	\IfFileExists{D_LaTeX/B_Packs/Packs.tex}{%
+		% Compilación desde TP_01.
+		\newcommand{\basepath}{.}
+		\newcommand{\latexpath}{D_LaTeX}
+	}{%
+		\IfFileExists{TP_01/D_LaTeX/B_Packs/Packs.tex}{%
+			% Compilación desde la raíz del repositorio.
+			\newcommand{\basepath}{TP_01}
+			\newcommand{\latexpath}{TP_01/D_LaTeX}
+		}{%
+			\PackageError{Master}{No se encontro TP_01/D_LaTeX}{Abrir Master.tex desde el repositorio.}%
+		}%
+	}%
+}
 \newcommand{\outputspath}{\joinpath{\basepath}{B_Outputs}}
-\newcommand{\latexpath}{\joinpath{\basepath}{D_LaTeX}}
-	
+
 % Cargar paquetes
 \input{\joinpath{\latexpath}{B_Packs/Packs.tex}}
 
@@ -34,10 +51,10 @@
 	%-------------------------------------------------------------
 	% Secciones
 	%-------------------------------------------------------------
-		\input{\joinpath{\latexpath}{C_Section/parte_01_v2.tex}}
-%		\input{\joinpath{\latexpath}{C_Section/sec_02.tex}}
-%		\input{\joinpath{\latexpath}{C_Section/sec_03.tex}}
-%		\input{\joinpath{\latexpath}{C_Section/sec_04.tex}}
+	\input{\joinpath{\latexpath}{C_Section/parte_01_v2.tex}}
+	%		\input{\joinpath{\latexpath}{C_Section/sec_02.tex}}
+	%		\input{\joinpath{\latexpath}{C_Section/sec_03.tex}}
+	%		\input{\joinpath{\latexpath}{C_Section/sec_04.tex}}
 	%-------------------------------------------------------------
 	% Bibliografia
 	%-------------------------------------------------------------
