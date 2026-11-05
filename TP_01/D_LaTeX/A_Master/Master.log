@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.10.10)  31 OCT 2026 23:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.10.10)  5 NOV 2026 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -563,23 +563,30 @@ table.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box64
 )
+(C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip62
+\multirow@cntb=\count321
+\multirow@dima=\skip63
+\bigstrutjot=\dimen269
+)
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen269
-\captionmargin=\dimen270
-\caption@leftmargin=\dimen271
-\caption@rightmargin=\dimen272
-\caption@width=\dimen273
-\caption@indent=\dimen274
-\caption@parindent=\dimen275
-\caption@hangindent=\dimen276
+\caption@tempdima=\dimen270
+\captionmargin=\dimen271
+\caption@leftmargin=\dimen272
+\caption@rightmargin=\dimen273
+\caption@width=\dimen274
+\caption@indent=\dimen275
+\caption@parindent=\dimen276
+\caption@hangindent=\dimen277
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count321
-\c@continuedfloat=\count322
+\c@caption@flags=\count322
+\c@continuedfloat=\count323
 Package caption Info: float package is loaded.
 Package caption Info: threeparttable package is loaded.
 )
@@ -603,10 +610,10 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip62
-\bibsep=\skip63
+\bibhang=\skip64
+\bibsep=\skip65
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count323
+\c@NAT@ctr=\count324
 )
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2026-06-17 v7.01r Hypertext links for LaTeX
@@ -651,16 +658,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count324
+\c@section@level=\count325
 )
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.st
 y
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen277
-\Hy@linkcounter=\count325
-\Hy@pagecounter=\count326
+\@linkdim=\dimen278
+\Hy@linkcounter=\count326
+\Hy@pagecounter=\count327
  (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2026-06-17 v7.01r Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -669,7 +676,7 @@ Now handling font encoding PD1 ...
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count327
+\Hy@SavedSpaceFactor=\count328
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2026-06-17 v7.01r Hyperref: PDF Unicode definition (HO)
@@ -683,14 +690,14 @@ Package hyperref Info: Plain pages OFF on input line 4214.
 Package hyperref Info: Backreferencing OFF on input line 4219.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4466.
-\c@Hy@tempcnt=\count328
+\c@Hy@tempcnt=\count329
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4805.
-\XeTeXLinkMargin=\dimen278
+\XeTeXLinkMargin=\dimen279
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -700,9 +707,9 @@ sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count329
-\Field@Width=\dimen279
-\Fld@charsize=\dimen280
+\Fld@menulength=\count330
+\Field@Width=\dimen280
+\Fld@charsize=\dimen281
 Package hyperref Info: Hyper figures OFF on input line 6091.
 Package hyperref Info: Link nesting OFF on input line 6096.
 Package hyperref Info: Hyper index ON on input line 6099.
@@ -710,16 +717,16 @@ Package hyperref Info: backreferencing OFF on input line 6106.
 Package hyperref Info: Link coloring OFF on input line 6111.
 Package hyperref Info: Link coloring with OCG OFF on input line 6116.
 Package hyperref Info: PDF/A mode OFF on input line 6121.
-\Hy@abspage=\count330
-\c@Item=\count331
-\c@Hfootnote=\count332
+\Hy@abspage=\count331
+\c@Item=\count332
+\c@Hfootnote=\count333
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2026-06-17 v7.01r Hyperref driver for pdfTeX
-\Fld@listcount=\count333
-\c@bookmark@seq@number=\count334
+\Fld@listcount=\count334
+\c@bookmark@seq@number=\count335
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfile
 check.sty
@@ -732,80 +739,80 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip64
+\Hy@SectionHShift=\skip66
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 46.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 46.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 46.
-Package hyperref Info: Option `unicode' set `true' on input line 46.
+Package hyperref Info: Option `colorlinks' set `true' on input line 47.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 47.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 47.
+Package hyperref Info: Option `unicode' set `true' on input line 47.
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box65
-\beforetitleunit=\skip65
-\aftertitleunit=\skip66
-\ttl@plus=\dimen281
-\ttl@minus=\dimen282
+\beforetitleunit=\skip67
+\aftertitleunit=\skip68
+\ttl@plus=\dimen282
+\ttl@minus=\dimen283
 \ttl@toksa=\toks36
-\titlewidth=\dimen283
-\titlewidthlast=\dimen284
-\titlewidthfirst=\dimen285
+\titlewidth=\dimen284
+\titlewidthlast=\dimen285
+\titlewidthfirst=\dimen286
 ))
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\l3backend-pdfte
 x.def
 File: l3backend-pdftex.def 2026-09-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count335
+\l__color_backend_stack_int=\count336
 ) (Master.aux
-LaTeX Info: Redefining \. on input line 22.
-LaTeX Info: Redefining \% on input line 22.
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 22.
+(babel)             Reported on input line 20.
 )
 \openout1 = `Master.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxsfmi/m/it on input line 22.
+LaTeX Font Info:    Checking defaults for OML/ntxsfmi/m/it on input line 24.
 LaTeX Font Info:    Trying to load font information for OML+ntxsfmi on input li
-ne 22.
+ne 24.
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/newtxsf\omlntxsfmi.fd
 File: omlntxsfmi.fd 2014/11/16 Fontinst v1.933 font definitions for OML/ntxsfmi
 .
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 24.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-22.
+24.
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 24.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 22.
+ 24.
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Info: Redefining \. on input line 22.
-LaTeX Info: Redefining \% on input line 22.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -841,24 +848,24 @@ LaTeX Info: Redefining \% on input line 22.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Command `\dddot' is already robust on input line 22.
-LaTeX Info: Command `\ddddot' is already robust on input line 22.
-\c@mv@tabular=\count336
-\c@mv@boldtabular=\count337
+LaTeX Info: Command `\dddot' is already robust on input line 24.
+LaTeX Info: Command `\ddddot' is already robust on input line 24.
+\c@mv@tabular=\count337
+\c@mv@boldtabular=\count338
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
-\scratchdimen=\dimen286
+\scratchcounter=\count339
+\scratchdimen=\dimen287
 \scratchbox=\box66
-\nofMPsegments=\count339
-\nofMParguments=\count340
+\nofMPsegments=\count340
+\nofMParguments=\count341
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count341
-\MPscratchDim=\dimen287
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
+\MPscratchCnt=\count342
+\MPscratchDim=\dimen288
+\MPnumerator=\count343
+\makeMPintoPDFobject=\count344
 \everyMPtoPDFconversion=\toks38
 )
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
@@ -872,15 +879,15 @@ g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package microtype Info: Patching varwidth to enable character protrusion.
-\MT@vwid@leftmargin=\dimen288
-\MT@vwid@rightmargin=\dimen289
-LaTeX Info: Redefining \microtypecontext on input line 22.
-Package microtype Info: Applying patch `item' on input line 22.
-Package microtype Info: Applying patch `toc' on input line 22.
-Package microtype Info: Applying patch `eqnum' on input line 22.
-Package microtype Info: Applying patch `footnote' on input line 22.
-Package microtype Info: Applying patch `verbatim' on input line 22.
-LaTeX Info: Redefining \microtypesetup on input line 22.
+\MT@vwid@leftmargin=\dimen289
+\MT@vwid@rightmargin=\dimen290
+LaTeX Info: Redefining \microtypecontext on input line 24.
+Package microtype Info: Applying patch `item' on input line 24.
+Package microtype Info: Applying patch `toc' on input line 24.
+Package microtype Info: Applying patch `eqnum' on input line 24.
+Package microtype Info: Applying patch `footnote' on input line 24.
+Package microtype Info: Applying patch `verbatim' on input line 24.
+LaTeX Info: Redefining \microtypesetup on input line 24.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -898,7 +905,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 22.
+Package hyperref Info: Link coloring ON on input line 24.
  (Master.out) (Master.out)
 \@outlinefile=\write3
 \openout3 = `Master.out'.
@@ -906,26 +913,26 @@ Package hyperref Info: Link coloring ON on input line 22.
 Package babel Info: Main language set to 'spanish'.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/m/n' in size <9> not available
 (Font)              Font shape `T1/FiraSans-LF/regular/n' tried instead on inpu
-t line 26.
+t line 28.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/regular/n' will be
-(Font)              scaled to size 8.36993pt on input line 26.
+(Font)              scaled to size 8.36993pt on input line 28.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/m/n' in size <17.28> not availab
 le
 (Font)              Font shape `T1/FiraSans-LF/regular/n' tried instead on inpu
-t line 28.
+t line 30.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/regular/n' will be
-(Font)              scaled to size 16.07027pt on input line 28.
+(Font)              scaled to size 16.07027pt on input line 30.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/b/n' in size <17.28> not availab
 le
 (Font)              Font shape `T1/FiraSans-LF/bold/n' tried instead on input l
-ine 28.
+ine 30.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/bold/n' will be
-(Font)              scaled to size 16.07027pt on input line 28.
+(Font)              scaled to size 16.07027pt on input line 30.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/m/n' in size <12> not available
 (Font)              Font shape `T1/FiraSans-LF/regular/n' tried instead on inpu
-t line 30.
+t line 32.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/regular/n' will be
-(Font)              scaled to size 11.15991pt on input line 30.
+(Font)              scaled to size 11.15991pt on input line 32.
 
 (D:/Github/PE1333_Grupo8/TP_01/D_LaTeX/C_Section/parte_01_v2.tex
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/b/n' in size <12> not available
@@ -934,7 +941,7 @@ ine 1.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/bold/n' will be
 (Font)              scaled to size 11.15991pt on input line 1.
 LaTeX Font Info:    Trying to load font information for T1+FiraMono-TOsF on inp
-ut line 8.
+ut line 5.
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/fira\t1firamono-tosf.fd
 File: T1FiraMono-TOsF.fd 2019/10/10 (autoinst) Font definitions for T1/FiraMono
@@ -943,15 +950,15 @@ File: T1FiraMono-TOsF.fd 2019/10/10 (autoinst) Font definitions for T1/FiraMono
 LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/m/n' in size <10.95> not avail
 able
 (Font)              Font shape `T1/FiraMono-TOsF/regular/n' tried instead on in
-put line 8.
+put line 5.
 LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/regular/n' will be
-(Font)              scaled to size 9.30756pt on input line 8.
+(Font)              scaled to size 9.30756pt on input line 5.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `FiraMono-TOsF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+FiraSans-LF on inpu
-t line 9.
+t line 6.
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/fira\ot1firasans-lf.fd
 File: OT1FiraSans-LF.fd 2019/10/10 (autoinst) Font definitions for OT1/FiraSans
 -LF.
@@ -959,25 +966,25 @@ File: OT1FiraSans-LF.fd 2019/10/10 (autoinst) Font definitions for OT1/FiraSans
 LaTeX Font Info:    Font shape `OT1/FiraSans-LF/m/n' in size <10.95> not availa
 ble
 (Font)              Font shape `OT1/FiraSans-LF/regular/n' tried instead on inp
-ut line 9.
+ut line 6.
 LaTeX Font Info:    Font shape `OT1/FiraSans-LF/regular/n' will be
-(Font)              scaled to size 10.18341pt on input line 9.
+(Font)              scaled to size 10.18341pt on input line 6.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `FiraSans-LF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/FiraSans-LF/m/n' in size <8> not available
 (Font)              Font shape `OT1/FiraSans-LF/regular/n' tried instead on inp
-ut line 9.
+ut line 6.
 LaTeX Font Info:    Font shape `OT1/FiraSans-LF/regular/n' will be
-(Font)              scaled to size 7.43994pt on input line 9.
+(Font)              scaled to size 7.43994pt on input line 6.
 LaTeX Font Info:    Font shape `OT1/FiraSans-LF/m/n' in size <6.1> not availabl
 e
 (Font)              Font shape `OT1/FiraSans-LF/regular/n' tried instead on inp
-ut line 9.
+ut line 6.
 LaTeX Font Info:    Font shape `OT1/FiraSans-LF/regular/n' will be
-(Font)              scaled to size 5.67296pt on input line 9.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
+(Font)              scaled to size 5.67296pt on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -985,7 +992,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -994,19 +1001,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsfmia on input lin
-e 9.
+e 6.
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/newtxsf\untxsfmia.fd
 File: untxsfmia.fd 2014/11/16 Fontinst v1.933 font definitions for U/ntxsfmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-9.
+6.
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-9.
+6.
 
 (C:\Users\JOEL\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
@@ -1014,37 +1021,37 @@ File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/b/n' in size <10.95> not availab
 le
 (Font)              Font shape `T1/FiraSans-LF/bold/n' tried instead on input l
-ine 24.
+ine 19.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/bold/n' will be
-(Font)              scaled to size 10.18341pt on input line 24.
+(Font)              scaled to size 10.18341pt on input line 19.
 LaTeX Font Info:    Font shape `OT1/FiraSans-LF/m/n' in size <9> not available
 (Font)              Font shape `OT1/FiraSans-LF/regular/n' tried instead on inp
-ut line 27.
+ut line 22.
 LaTeX Font Info:    Font shape `OT1/FiraSans-LF/regular/n' will be
-(Font)              scaled to size 8.36993pt on input line 27.
+(Font)              scaled to size 8.36993pt on input line 22.
 LaTeX Font Info:    Font shape `OT1/FiraSans-LF/m/n' in size <7.3> not availabl
 e
 (Font)              Font shape `OT1/FiraSans-LF/regular/n' tried instead on inp
-ut line 27.
+ut line 22.
 LaTeX Font Info:    Font shape `OT1/FiraSans-LF/regular/n' will be
-(Font)              scaled to size 6.78894pt on input line 27.
+(Font)              scaled to size 6.78894pt on input line 22.
 LaTeX Font Info:    Font shape `OT1/FiraSans-LF/m/n' in size <5.5> not availabl
 e
 (Font)              Font shape `OT1/FiraSans-LF/regular/n' tried instead on inp
-ut line 27.
+ut line 22.
 LaTeX Font Info:    Font shape `OT1/FiraSans-LF/regular/n' will be
-(Font)              scaled to size 5.11496pt on input line 27.
+(Font)              scaled to size 5.11496pt on input line 22.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/b/n' in size <9> not available
 (Font)              Font shape `T1/FiraSans-LF/bold/n' tried instead on input l
-ine 29.
+ine 24.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/bold/n' will be
-(Font)              scaled to size 8.36993pt on input line 29.
+(Font)              scaled to size 8.36993pt on input line 24.
 LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/m/n' in size <9> not available
 
 (Font)              Font shape `T1/FiraMono-TOsF/regular/n' tried instead on in
-put line 31.
+put line 26.
 LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/regular/n' will be
-(Font)              scaled to size 7.65005pt on input line 31.
+(Font)              scaled to size 7.65005pt on input line 26.
 
 [1
 
@@ -1052,35 +1059,70 @@ LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/regular/n' will be
 AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fira/fir_tz2nek.enc}{C:/Users/JOE
 L/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fira/fir_d4q673.enc}{C:/Users/J
 OEL/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fira/fir_ugbesn.enc}]
-[2]) (Master.bbl
+<D:/Github/PE1333_Grupo8/TP_01/B_Outputs/B_Figure/heatmap_faltantes.png, id=75,
+ 859.5312pt x 426.1521pt>
+File: D:/Github/PE1333_Grupo8/TP_01/B_Outputs/B_Figure/heatmap_faltantes.png Gr
+aphic file (type png)
+<use D:/Github/PE1333_Grupo8/TP_01/B_Outputs/B_Figure/heatmap_faltantes.png>
+Package pdftex.def Info: D:/Github/PE1333_Grupo8/TP_01/B_Outputs/B_Figure/heatm
+ap_faltantes.png  used on input line 55.
+(pdftex.def)             Requested size: 409.09508pt x 202.834pt.
+
+(D:/Github/PE1333_Grupo8/TP_01/B_Outputs/B_Table/tabla_diferencia_medias_resume
+n.tex
+LaTeX Font Info:    Font shape `T1/FiraSans-LF/m/it' in size <9> not available
+(Font)              Font shape `T1/FiraSans-LF/regular/it' tried instead on inp
+ut line 23.
+LaTeX Font Info:    Font shape `T1/FiraSans-LF/regular/it' will be
+(Font)              scaled to size 8.36993pt on input line 23.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 5--24
+    [] 
+ []
+
+) [2 <D:/Github/PE1333_Grupo8/TP_01/B_Outputs/B_Figure/heatmap_faltantes.png>])
+(Master.bbl
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/m/it' in size <10.95> not availa
 ble
 (Font)              Font shape `T1/FiraSans-LF/regular/it' tried instead on inp
 ut line 7.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/regular/it' will be
 (Font)              scaled to size 10.18341pt on input line 7.
-)
 
-Package caption Warning: Unused \captionsetup[figure] on input line 26.
-See the caption package documentation for explanation.
+Underfull \hbox (badness 2932) in paragraph at lines 11--18
+[]\T1/FiraSans-LF/regular/n/10.95 (+20) Bertranou, F., Ca-sa-no-va, L., Ji-mé-n
+ez, M., and Ji-mé-nez, M. (2013).  In-for-ma-li-dad, ca-li-dad
+ []
 
-[3] (Master.aux
-LaTeX Info: Redefining \. on input line 22.
-LaTeX Info: Redefining \% on input line 22.
+
+Underfull \hbox (badness 4492) in paragraph at lines 11--18
+\T1/FiraSans-LF/regular/n/10.95 (+20) del em-pleo y seg-men-ta-ción la-bo-ral e
+n ar-gen-ti-na.  Do-cu-men-to de tra-ba-jo 2, Or-ga-
+ []
+
+
+Underfull \hbox (badness 2495) in paragraph at lines 11--18
+\T1/FiraSans-LF/regular/n/10.95 (+20) ni-za-ción In-ter-na-cio-nal del Tra-ba-j
+o, Bue-nos Ai-res.  [][]$https : / / www . ilo . org / es / publications /
+ []
+
+) [3] (Master.aux
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
 )
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-09-09>
  ***********
 Package rerunfilecheck Info: File `Master.out' has not changed.
-(rerunfilecheck)             Checksum: 8E652569F027EC32380F7649F3B89D7C;1928.
+(rerunfilecheck)             Checksum: 22C92C8439488B78A03782D2241DE1D9;1058.
  ) 
 Here is how much of TeX's memory you used:
- 21152 strings out of 467392
- 354066 string characters out of 5406124
- 816515 words of memory out of 5000000
- 49977 multiletter control sequences out of 15000+600000
- 830739 words of font info for 231 fonts, out of 8000000 for 9000
+ 21222 strings out of 467392
+ 356161 string characters out of 5406124
+ 817030 words of memory out of 5000000
+ 50047 multiletter control sequences out of 15000+600000
+ 845645 words of font info for 229 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,11n,120p,1005b,535s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/JOEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraMono
@@ -1093,9 +1135,9 @@ ams/MiKTeX/fonts/type1/public/newtx/txexs.pfb><C:/Users/JOEL/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/JOEL/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/newtxsf/zsfmi-reg.pfb><C:/Users/JOEL/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/newtxsf/zsfmia-reg.pfb>
-Output written on Master.pdf (3 pages, 244657 bytes).
+Output written on Master.pdf (3 pages, 348700 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 48185 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 500000)
+ 52270 words of extra memory for PDF output out of 61914 (max. 10000000)
 
