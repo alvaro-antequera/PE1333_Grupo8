@@ -1,0 +1,23 @@
+\begin{table}[H]
+\caption{Matrices de confusión en la muestra de testeo (umbral $p>0,5$)}
+\label{tab:matriz_confusion}
+\centering
+\footnotesize
+\begin{tabular}{lrr}
+\toprule
+ & Predicho formal (0) & Predicho informal (1) \\
+\midrule
+\multicolumn{3}{l}{\textbf{Logit}} \\
+Observado formal (0) & 2755 & 559 \\
+Observado informal (1) & 531 & 2023 \\
+\midrule
+\multicolumn{3}{l}{\textbf{LDA}} \\
+Observado formal (0) & 2733 & 581 \\
+Observado informal (1) & 526 & 2028 \\
+\midrule
+\multicolumn{3}{l}{\textbf{KNN (K = 300)}} \\
+Observado formal (0) & 2518 & 796 \\
+Observado informal (1) & 445 & 2109 \\
+\bottomrule
+\end{tabular}
+\end{table}
