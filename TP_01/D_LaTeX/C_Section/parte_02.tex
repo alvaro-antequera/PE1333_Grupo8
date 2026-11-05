@@ -1,0 +1,41 @@
+\section{Parte II. Regresión logística y análisis discriminante lineal}
+\label{sec:parte_02}
+
+\subsection*{Inciso 5. Regresión logística}
+
+Se estima una regresión logística por máxima verosimilitud sobre la muestra de entrenamiento (13.692 observaciones), tomando como variable dependiente la informalidad y como regresores las 68 variables explicativas de la base limpia (variables numéricas, el indicador de ingreso no declarado y las variables categóricas expresadas como \textit{dummies}, omitiendo una categoría de referencia por variable). La \tabref{tab:logit_resumen} presenta los coeficientes, sus errores estándar y los \textit{odds ratios} ($e^{\hat\beta}$) de las variables más relevantes; la tabla completa, con los 69 parámetros, se encuentra en \texttt{B\_Table/tabla\_logit\_completa.csv}.
+
+\input{\joinpath{\outputspath}{B_Table/tabla_logit_resumen.tex}}
+
+\textbf{Interpretación de coeficientes.}
+
+\textit{Nivel educativo:} El coeficiente de tener estudios superiores completos es $-2,007$ (error estándar $0,165$), medido respecto de la categoría de referencia, primario incompleto. Es claramente significativo, ya que el coeficiente es más de doce veces su error estándar. El \textit{odds ratio} es $e^{-2,007}=0,134$: manteniendo constantes las demás variables, los \textit{odds} de ser informal de una persona con estudios superiores completos son un 86,6\% menores que los de una persona con primario incompleto.
+
+\textit{Ingreso laboral:} El coeficiente del logaritmo del ingreso es $-0,316$ (error estándar $0,024$), por lo que también es significativo. Dado que la variable está en logaritmos, un aumento del 10\% en el ingreso multiplica los \textit{odds} de informalidad por $1,1^{-0,316}=0,970$, es decir, los reduce aproximadamente un 3\%, \textit{ceteris paribus}.
+
+Respecto a la diferencia entre el signo y la magnitud de los coeficientes, el signo nos indica la dirección en la que cambia la probabilidad de ser informal, sin embargo la magnitud no se traduce directamente en probabilidad. Esto se debe a que el modelo es lineal en el logaritmo de los \textit{odds}. Un ejemplo de ello es cómo el \textit{odds ratio} de $0,134$ de los estudios superiores completos reduce la probabilidad de informalidad en $38,2$ puntos porcentuales para una persona con probabilidad inicial de $50\%$ (pasa a $11,8\%$), pero solo en $8,5$ puntos porcentuales para una persona con probabilidad inicial de $10\%$ (pasa a $1,5\%$). Por lo tanto, el coeficiente nos permite saber el signo y la importancia relativa de cada variable, pero no cuántos puntos porcentuales cambia la probabilidad.
+
+
+\subsection*{Inciso 6. Probabilidad de informalidad según una variable numérica}
+
+En este punto graficamos la probabilidad estimada de ser informal en función de una variable numérica, en este caso el logaritmo del ingreso laboral. Para ello estimamos una regresión logística que utiliza únicamente esa variable como regresor, y evaluamos la probabilidad predicha sobre una grilla de valores del logaritmo del ingreso, entre cero y su valor máximo. En la \figref{fig:prob_informal_ingreso} se presenta la curva estimada junto con los valores observados de la variable dependiente.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{\joinpath{\outputspath}{B_Figure/prob_informal_ingreso.png}}
+	\caption{Probabilidad estimada de informalidad según el ingreso laboral}
+	\label{fig:prob_informal_ingreso}
+\end{figure}
+
+La curva tiene la forma de ``S'' y es decreciente: a mayor ingreso laboral, menor es la probabilidad estimada de ser informal. Con ingresos bajos la probabilidad de ser informal es prácticamente uno, y a medida que aumenta el ingreso va disminuyendo de forma gradual. Esto es consistente con el signo negativo del coeficiente del logaritmo del ingreso.
+
+
+\subsection*{Inciso 7. Análisis discriminante lineal}
+
+En este punto estimamos un análisis discriminante lineal (LDA) sobre la misma muestra de entrenamiento, con los mismos regresores. A diferencia de la regresión logística, el LDA supone que dentro de cada clase los regresores siguen una distribución normal multivariada. A partir de ese supuesto, y de la probabilidad \textit{a priori} de cada clase, aplica la regla de Bayes para obtener la probabilidad de ser informal dado $X$.
+
+Con la base de la EPH es difícil sostener este supuesto, debido a que 62 de las 68 variables explicativas son binarias, por lo que casi un 90\% de las variables no pueden tener distribución normal. De las 6 variables numéricas que nos quedan calculamos la curtosis y la asimetría (\tabref{tab:lda_normalidad}). Podemos observar que se alejan de cero, por lo que tampoco se asemejan a una distribución normal.
+
+\input{\joinpath{\outputspath}{B_Table/tabla_lda_normalidad.tex}}
+
+Aun así, el LDA puede funcionar como clasificador aunque el supuesto no se cumpla exactamente: en la muestra de prueba clasifica igual que la regresión logística el $96,9\%$ de las observaciones.

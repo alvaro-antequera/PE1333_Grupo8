@@ -1,0 +1,30 @@
+\section{Parte III. Vecinos cercanos}
+\label{sec:parte_03}
+
+\subsection*{Inciso 8. KNN con distintos valores de K}
+
+Se procede a estimar vecinos cercanos considerando los siguientes valores del hiperparámetro $K={10,50,100}$. Una vez estimados los modelos para los distintos valores correspondientes de $K$, se calcula el porcentaje de observaciones que el modelo clasifica correctamente \textit{()accuracy)}. Los resultados que se obtienen son los siguientes:
+
+\input{\joinpath{\outputspath}{B_Table/tabla_knn_k_fijos.tex}}
+
+
+La elección de $K$ introduce un \textit{trade-off} entre sesgo y varianza, dado que a medida que aumenta el número de vecinos cercanos se consideran observaciones cada vez más alejadas de la observación a clasificar y por lo tanto menos similares, lo que en general reduce la varianza pero aumenta el sesgo. En el extremo cuando $K=1$, el modelo considera únicamente al vecino más cercano, por lo que presenta un sesgo bajo y una varianza elevada, ya que pequeños cambios en los datos pueden modificar la clasificación. En cambio, cuando $K=n$, se utiliza toda la muestra de entrenamiento para clasificar según la mayoría, lo que reduce la varianza pero aumenta el sesgo dado que considero a todas estas observaciones y no necesariamente a las que están más cercanas.
+
+
+\subsection*{Inciso 9. Selección de K cross validation}
+
+
+Se selecciona el valor óptimo de $K$ mediante cross validation utilizando una division de cinco partes de la muestra de entrenamiento. De esta manera, en cada iteración se utilizan cuatro partes para estimar el modelo y la restante para evaluar su capacidad de clasificación, calculando el \textit{accuracy}. Luego este procedimiento se repite para distintos valores de $K$, entre 1 y 1000, y se obtiene el \textit{accuracy} promedio de los cinco bloques para cada valor.
+
+Para evitar utilizar información del bloque de validación, los valores faltantes se imputan y las variables se estandarizan utilizando únicamente las observaciones correspondientes al entrenamiento de cada bloque.
+
+\input{\joinpath{\outputspath}{B_Table/tabla_knn_cv.tex}}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{\joinpath{\outputspath}{B_Figure/knn_accuracy_cv.png}}
+	\caption{Selección del número de vecinos mediante validación cruzada}
+	\label{fig:knn_cv}
+\end{figure}
+
+Como se observa en la tabla y el gráfico, el \textit{accuracy} promedio alcanza su mayor valor cuando $K=300$, con un 77,40\% de observaciones correctamente clasificadas. Para valores mayores de $K$, el \textit{accuracy} comienza a disminuir, por lo que se selecciona $K=300$ como el valor óptimo dentro de la grilla evaluada (KNN con K-CV).
