@@ -1,0 +1,21 @@
+\section{Parte IV. Desempeño de modelos y elección}
+\label{sec:parte_04}
+
+\subsection*{Inciso 10. Comparación del desempeño en la muestra de testeo}
+
+En este punto, luego de estimar los modelos con la base de entrenamiento, comparamos su desempeño en la muestra de testeo. En la \tabref{tab:matriz_confusion} se presentan las matrices de confusión de los tres modelos, calculadas con el umbral $0,5$, y en la \figref{fig:curvas_roc} las curvas ROC. Como métricas adicionales calculamos la sensibilidad, que es la proporción de informales correctamente clasificados, y la especificidad, que es la proporción de formales correctamente clasificados (\tabref{tab:metricas_testeo}).
+
+\input{\joinpath{\outputspath}{B_Table/tabla_matriz_confusion.tex}}
+
+\input{\joinpath{\outputspath}{B_Table/tabla_metricas_testeo.tex}}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{\joinpath{\outputspath}{B_Figure/curvas_roc_testeo.png}}
+	\caption{Curvas ROC de los tres modelos en la muestra de testeo}
+	\label{fig:curvas_roc}
+\end{figure}
+
+Podemos observar que los tres modelos tienen un desempeño similar: clasifican bien entre el 79\% y el 81\% de las observaciones. Por un lado, la regresión logística y el LDA son casi idénticos: sus matrices de confusión difieren en pocas observaciones y sus curvas ROC casi se superponen. Por otro lado, el KNN es el que menos exactitud tiene (78,9\%) y su curva ROC queda por debajo de las otras dos en casi todo el recorrido. Sin embargo, con el umbral $0,5$ es el modelo con mayor sensibilidad, al costo de perder especificidad.
+
+Con este análisis elegiríamos la regresión logística, ya que es la que tiene mayor exactitud y mayor AROC. Además, a diferencia del LDA, no requiere que los regresores se distribuyan de forma normal, un supuesto que en el inciso 7 vimos que no se cumple en nuestra base. La diferencia con el LDA es muy pequeña, pero la logística resulta una elección más segura.
