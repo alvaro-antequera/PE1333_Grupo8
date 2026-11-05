@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.8.18)  4 NOV 2026 14:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.8.18)  5 NOV 2026 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -922,12 +922,12 @@ LaTeX Font Info:    Font shape `T1/FiraSans-LF/m/n' in size <12> not available
 t line 47.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/regular/n' will be
 (Font)              scaled to size 11.15991pt on input line 47.
- (../C_Section/parte_01_v2.tex
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/b/n' in size <12> not available
 (Font)              Font shape `T1/FiraSans-LF/bold/n' tried instead on input l
-ine 1.
+ine 54.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/bold/n' will be
-(Font)              scaled to size 11.15991pt on input line 1.
+(Font)              scaled to size 11.15991pt on input line 54.
+ (../C_Section/parte_01_v2.tex
 LaTeX Font Info:    Trying to load font information for T1+FiraMono-TOsF on inp
 ut line 8.
 
@@ -1047,7 +1047,7 @@ LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/regular/n' will be
 r/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fira/fir_tz2nek.enc}{C:/Users/a
 lvar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fira/fir_d4q673.enc}{C:/User
 s/alvar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fira/fir_ugbesn.enc}]
-<../../B_Outputs/B_Figure/heatmap_faltantes.png, id=94, 859.65166pt x 352.31625
+<../../B_Outputs/B_Figure/heatmap_faltantes.png, id=95, 859.65166pt x 352.31625
 pt>
 File: ../../B_Outputs/B_Figure/heatmap_faltantes.png Graphic file (type png)
 <use ../../B_Outputs/B_Figure/heatmap_faltantes.png>
@@ -1055,25 +1055,54 @@ Package pdftex.def Info: ../../B_Outputs/B_Figure/heatmap_faltantes.png  used o
 n input line 76.
 (pdftex.def)             Requested size: 418.08119pt x 171.34625pt.
 
-[2 <../../B_Outputs/B_Figure/heatmap_faltantes.png>])
-(../C_Section/parte_03.tex
+[2] [3 <../../B_Outputs/B_Figure/heatmap_faltantes.png>])
+(../C_Section/parte_02.tex
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/m/it' in size <10.95> not availa
 ble
 (Font)              Font shape `T1/FiraSans-LF/regular/it' tried instead on inp
 ut line 6.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/regular/it' will be
 (Font)              scaled to size 10.18341pt on input line 6.
- [3] (../../B_Outputs/B_Table/tabla_knn_k_fijos.tex)
-(../../B_Outputs/B_Table/tabla_knn_cv.tex) [4]
-<../../B_Outputs/B_Figure/knn_accuracy_cv.png, id=120, 643.203pt x 353.03896pt>
+ (../../B_Outputs/B_Table/tabla_logit_resumen.tex
+LaTeX Font Info:    Font shape `T1/FiraSans-LF/m/it' in size <9> not available
+(Font)              Font shape `T1/FiraSans-LF/regular/it' tried instead on inp
+ut line 8.
+LaTeX Font Info:    Font shape `T1/FiraSans-LF/regular/it' will be
+(Font)              scaled to size 8.36993pt on input line 8.
+)
+[4]
+<../../B_Outputs/B_Figure/prob_informal_ingreso.png, id=130, 570.933pt x 280.76
+895pt>
+File: ../../B_Outputs/B_Figure/prob_informal_ingreso.png Graphic file (type png
+)
+<use ../../B_Outputs/B_Figure/prob_informal_ingreso.png>
+Package pdftex.def Info: ../../B_Outputs/B_Figure/prob_informal_ingreso.png  us
+ed on input line 25.
+(pdftex.def)             Requested size: 404.59515pt x 198.97461pt.
+ [5 <../../B_Outputs/B_Figure/prob_informal_ingreso.png>]
+(../../B_Outputs/B_Table/tabla_lda_normalidad.tex)) (../C_Section/parte_03.tex
+(../../B_Outputs/B_Table/tabla_knn_k_fijos.tex) [6]
+(../../B_Outputs/B_Table/tabla_knn_cv.tex)
+<../../B_Outputs/B_Figure/knn_accuracy_cv.png, id=144, 643.203pt x 353.03896pt>
 
 File: ../../B_Outputs/B_Figure/knn_accuracy_cv.png Graphic file (type png)
 <use ../../B_Outputs/B_Figure/knn_accuracy_cv.png>
 Package pdftex.def Info: ../../B_Outputs/B_Figure/knn_accuracy_cv.png  used on 
 input line 25.
 (pdftex.def)             Requested size: 427.07419pt x 234.41241pt.
-) (Master.bbl [5 <../../B_Outputs/B_Figure/knn_accuracy_cv.png>]) [6] (Master.a
-ux
+ [7]) (../C_Section/parte_04.tex
+(../../B_Outputs/B_Table/tabla_matriz_confusion.tex)
+(../../B_Outputs/B_Table/tabla_metricas_testeo.tex) [8 <../../B_Outputs/B_Figur
+e/knn_accuracy_cv.png>]
+<../../B_Outputs/B_Figure/curvas_roc_testeo.png, id=163, 387.72855pt x 394.5942
+pt>
+File: ../../B_Outputs/B_Figure/curvas_roc_testeo.png Graphic file (type png)
+<use ../../B_Outputs/B_Figure/curvas_roc_testeo.png>
+Package pdftex.def Info: ../../B_Outputs/B_Figure/curvas_roc_testeo.png  used o
+n input line 14.
+(pdftex.def)             Requested size: 314.68588pt x 320.26378pt.
+ [9 <../../B_Outputs/B_Figure/curvas_roc_testeo.png>])
+(Master.bbl) [10] (Master.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
@@ -1082,16 +1111,16 @@ LaTeX2e <2026-06-01>
 L3 programming layer <2026-07-20>
  ***********
 Package rerunfilecheck Info: File `Master.out' has not changed.
-(rerunfilecheck)             Checksum: 0364B2FD700ABAEEF4C015305BE3628E;2127.
+(rerunfilecheck)             Checksum: 2561DB4818889AEDA8B2AB2D9E9D4A19;2802.
  ) 
 Here is how much of TeX's memory you used:
- 21059 strings out of 467501
- 351548 string characters out of 5408550
- 814502 words of memory out of 5000000
- 49726 multiletter control sequences out of 15000+600000
- 833447 words of font info for 251 fonts, out of 8000000 for 9000
+ 21191 strings out of 467501
+ 356174 string characters out of 5408550
+ 808288 words of memory out of 5000000
+ 49771 multiletter control sequences out of 15000+600000
+ 856073 words of font info for 291 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,11n,120p,1005b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,11n,120p,1005b,535s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraMon
 o-Regular.pfb><C:/Users/alvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 fira/FiraSans-Bold.pfb><C:/Users/alvar/AppData/Local/Programs/MiKTeX/fonts/type
@@ -1102,9 +1131,9 @@ grams/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/alvar/AppData/Local
 al/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/alvar/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/newtxsf/zsfmi-reg.pfb><C:/Users/alvar/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/newtxsf/zsfmia-reg.pfb>
-Output written on Master.pdf (6 pages, 379408 bytes).
+Output written on Master.pdf (10 pages, 547076 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 48203 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 231 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
+ 52325 words of extra memory for PDF output out of 61914 (max. 10000000)
 

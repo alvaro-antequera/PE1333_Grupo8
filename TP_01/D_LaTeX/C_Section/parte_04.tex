@@ -19,3 +19,12 @@ En este punto, luego de estimar los modelos con la base de entrenamiento, compar
 Podemos observar que los tres modelos tienen un desempeño similar: clasifican bien entre el 79\% y el 81\% de las observaciones. Por un lado, la regresión logística y el LDA son casi idénticos: sus matrices de confusión difieren en pocas observaciones y sus curvas ROC casi se superponen. Por otro lado, el KNN es el que menos exactitud tiene (78,9\%) y su curva ROC queda por debajo de las otras dos en casi todo el recorrido. Sin embargo, con el umbral $0,5$ es el modelo con mayor sensibilidad, al costo de perder especificidad.
 
 Con este análisis elegiríamos la regresión logística, ya que es la que tiene mayor exactitud y mayor AROC. Además, a diferencia del LDA, no requiere que los regresores se distribuyan de forma normal, un supuesto que en el inciso 7 vimos que no se cumple en nuestra base. La diferencia con el LDA es muy pequeña, pero la logística resulta una elección más segura.
+
+\subsection*{Inciso 11. Implementación de política}
+
+Suponiendo que la secretaría de trabajo esté interesada en identificar a trabajadores informales, sugeriríamos la implementación del modelo de regresión logística para dirigir los recursos de dicho programa.
+
+La elección radica principalmente en que este modelo, además de presentar un nivel de \textit{accuracy} favorable en comparación con los otros modelos, es el que presenta un mayor valor predictivo positivo. Es deseable tener una alta proporción de trabajadores clasificados como informales que sean verdaderamente informales, dado que, una vez identificados, serán alcanzados por el programa y se les destinarán recursos escasos. Por lo tanto, dada la limitación presupuestaria, buscaríamos reducir la cantidad de recursos asignados a trabajadores que ya son formales aunque esto implique dejar afuera a algunos trabajadores informales.
+
+Considerando lo anterior, si bien dejar afuera del programa a un trabajador informal tiene un costo en términos de bienestar, se podría intentar reducir este costo priorizando a aquellos individuos con mayor probabilidad estimada de ser informales. Para ello, se ordenarían los trabajadores de mayor a menor según la probabilidad estimada por el modelo y se seleccionaría a los primeros hasta alcanzar la cantidad de beneficiarios que permita atender el presupuesto disponible. De esta manera, el umbral de clasificación no sería necesariamente 0,5, sino que estaría determinado por la cantidad de trabajadores que puede alcanzar el programa.
+
