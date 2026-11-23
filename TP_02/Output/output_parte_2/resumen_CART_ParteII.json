@@ -1,0 +1,20 @@
+{
+  "n_train": 13692,
+  "n_test": 5868,
+  "n_predictores": 68,
+  "ccp_alpha_optimo": 0.0003998396749756404,
+  "accuracy_cv_10fold": 0.8012719071409148,
+  "error_cv_10fold": 0.19872809285908521,
+  "profundidad": 12,
+  "numero_hojas": 51,
+  "numero_nodos": 101,
+  "variable_raiz": "log_ingreso",
+  "umbral_raiz": 13.31295108795166,
+  "ingreso_equivalente_si_log_ingreso": 604979.2476403521,
+  "predictores_importancia_cero": 45,
+  "lasso_predictores_cero": 6,
+  "coincidencias_lasso_cart_cero": 5,
+  "prop_lasso_cero_tambien_cart_cero": 0.8333333333333334,
+  "prop_cart_cero_tambien_lasso_cero": 0.1111111111111111,
+  "nota_parte_3": "El test no fue utilizado en Parte II. En Parte III se debe cargar este mismo arbol y evaluarlo sobre el mismo X_test que Logit, KNN, LASSO y Ridge."
+}

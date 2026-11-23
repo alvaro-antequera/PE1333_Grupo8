@@ -1,0 +1,7 @@
+﻿variable,descripcion,importancia,cart_cero,coinciden
+IX_MEN10,Menores de 10 anos en el hogar,0.0,True,True
+CH03_3,Parentesco: hijo/a o hijastro/a,0.0,True,True
+CH03_5,Parentesco: nieto/a,0.0,True,True
+CH03_9,Parentesco: otro familiar,0.0,True,True
+NIVEL_ED_2,Nivel educativo: primario completo,0.0,True,True
+tamano_emp_tam_2,Tamano del establecimiento: 2 personas,0.003340583478733335,False,False
